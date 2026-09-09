@@ -1,0 +1,41 @@
+{
+  "id": "up-for-grabs-open-source-tasks",
+  "product": "book-bounty-data",
+  "domain": "bounty",
+  "schema_version": "bounty.v1",
+  "fetch_url": "https://up-for-grabs.net/",
+  "source_url": "https://up-for-grabs.net/",
+  "access": "html",
+  "content_type": "text/html",
+  "category": "open-source",
+  "provider": "Up For Grabs",
+  "title": "Up For Grabs open-source tasks",
+  "required_markers": [
+    "open source projects",
+    "curated tasks"
+  ],
+  "generic_html": true,
+  "eligible_countries": [
+    "GLOBAL"
+  ],
+  "eligibility_text": "Up For Grabs lists public open-source tasks curated by participating projects; repository contribution terms apply.",
+  "value_kind": "unknown",
+  "value_amount": null,
+  "value_currency": null,
+  "value_guaranteed": null,
+  "cost_notes": "The adapter records only public programme metadata. Confirm current eligibility, price, availability and terms at the official source.",
+  "normalized_terms": {
+    "acceptance_criteria": "Issue-specific acceptance criteria are stated in the listed repository issue.",
+    "authorization_scope": "Only work on repositories and issues where the project grants permission.",
+    "payout_condition": "No payment is inferred from this directory; check the repository issue for any reward terms.",
+    "dispute_process": "Use the contribution and maintainer process stated by the listed project."
+  },
+  "enabled": true,
+  "permission_status": "reviewed-public-read",
+  "reviewed_at": "2026-09-08",
+  "permission_evidence": "https://up-for-grabs.net/robots.txt",
+  "owner": "bookchaowalit",
+  "min_interval_seconds": 21600,
+  "retention": "private local raw archive; operational retention; no automatic deletion",
+  "use": "public open-source task metadata for personal discovery; no source-body republication"
+}

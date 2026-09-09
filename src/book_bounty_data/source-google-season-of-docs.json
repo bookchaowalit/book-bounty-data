@@ -1,0 +1,41 @@
+{
+  "id": "google-season-of-docs",
+  "product": "book-bounty-data",
+  "domain": "bounty",
+  "schema_version": "bounty.v1",
+  "fetch_url": "https://developers.google.com/season-of-docs",
+  "source_url": "https://developers.google.com/season-of-docs",
+  "access": "html",
+  "content_type": "text/html",
+  "category": "documentation",
+  "provider": "Google Open Source Programs",
+  "title": "Google Season of Docs",
+  "required_markers": [
+    "season of docs",
+    "technical writers"
+  ],
+  "generic_html": true,
+  "eligible_countries": [
+    "GLOBAL"
+  ],
+  "eligibility_text": "Google Season of Docs documentation programme information; current programme status and project terms must be checked.",
+  "value_kind": "variable",
+  "value_amount": null,
+  "value_currency": null,
+  "value_guaranteed": null,
+  "cost_notes": "The adapter records only public programme metadata. Confirm current eligibility, price, availability and terms at the official source.",
+  "normalized_terms": {
+    "acceptance_criteria": "Project-specific documentation deliverables and review criteria apply.",
+    "authorization_scope": "Work only within the participating open-source project's documented scope.",
+    "payout_condition": "Payment and participation conditions are set by the current programme and project.",
+    "dispute_process": "Follow the programme and participating project contact process."
+  },
+  "enabled": true,
+  "permission_status": "reviewed-public-read",
+  "reviewed_at": "2026-09-08",
+  "permission_evidence": "https://developers.google.com/robots.txt",
+  "owner": "bookchaowalit",
+  "min_interval_seconds": 21600,
+  "retention": "private local raw archive; operational retention; no automatic deletion",
+  "use": "public bounty metadata for personal discovery; no source-body republication"
+}

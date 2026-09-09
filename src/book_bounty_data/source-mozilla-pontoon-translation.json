@@ -1,0 +1,41 @@
+{
+  "id": "mozilla-pontoon-translation",
+  "product": "book-bounty-data",
+  "domain": "bounty",
+  "schema_version": "bounty.v1",
+  "fetch_url": "https://pontoon.mozilla.org/",
+  "source_url": "https://pontoon.mozilla.org/",
+  "access": "html",
+  "content_type": "text/html",
+  "category": "translation",
+  "provider": "Mozilla",
+  "title": "Mozilla Pontoon localization projects",
+  "required_markers": [
+    "localize",
+    "contributors"
+  ],
+  "generic_html": true,
+  "eligible_countries": [
+    "GLOBAL"
+  ],
+  "eligibility_text": "Mozilla Pontoon public localization projects; language teams and project-specific contribution rules apply.",
+  "value_kind": "unknown",
+  "value_amount": null,
+  "value_currency": null,
+  "value_guaranteed": null,
+  "cost_notes": "The adapter records only public programme metadata. Confirm current eligibility, price, availability and terms at the official source.",
+  "normalized_terms": {
+    "acceptance_criteria": "Accepted translation contributions follow the selected project's review workflow.",
+    "authorization_scope": "Contribute only to projects and strings exposed by Mozilla Pontoon.",
+    "payout_condition": "This is a contribution opportunity; payment is not inferred from the public project page.",
+    "dispute_process": "Use the project's Pontoon review and Mozilla contribution channels."
+  },
+  "enabled": true,
+  "permission_status": "reviewed-public-read",
+  "reviewed_at": "2026-09-08",
+  "permission_evidence": "https://pontoon.mozilla.org/robots.txt",
+  "owner": "bookchaowalit",
+  "min_interval_seconds": 21600,
+  "retention": "private local raw archive; operational retention; no automatic deletion",
+  "use": "public bounty metadata for personal discovery; no source-body republication"
+}

@@ -1,0 +1,20 @@
+{
+  "domain": "bounty",
+  "enabled_sources": [
+    "github-bug-bounty-rules",
+    "up-for-grabs-open-source-tasks",
+    "google-season-of-docs",
+    "mozilla-pontoon-translation",
+    "apache-community-tasks"
+  ],
+  "enabled_category_capabilities": ["open-source", "security", "documentation", "translation", "community-task"],
+  "candidate_source_classes": [
+    "official program API or export",
+    "official RSS or announcement feed",
+    "official public program page"
+  ],
+  "permission_status": "reviewed-public-read",
+  "network_enabled": true,
+  "policy_file": "src/book_bounty_data/source-github-bug-bounty-rules.json",
+  "notes": "Five manually invoked official sources are enabled with a six-hour minimum interval. Re-check authorization, acceptance and reward terms before acting."
+}

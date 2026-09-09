@@ -1,0 +1,41 @@
+{
+  "id": "apache-community-tasks",
+  "product": "book-bounty-data",
+  "domain": "bounty",
+  "schema_version": "bounty.v1",
+  "fetch_url": "https://www.apache.org/foundation/getinvolved.html",
+  "source_url": "https://www.apache.org/foundation/getinvolved.html",
+  "access": "html",
+  "content_type": "text/html",
+  "category": "community-task",
+  "provider": "Apache Software Foundation",
+  "title": "Apache community contribution tasks",
+  "required_markers": [
+    "get involved",
+    "contributor"
+  ],
+  "generic_html": true,
+  "eligible_countries": [
+    "GLOBAL"
+  ],
+  "eligibility_text": "Apache community contribution guide; each project sets its own tasks, permissions and review process.",
+  "value_kind": "unknown",
+  "value_amount": null,
+  "value_currency": null,
+  "value_guaranteed": null,
+  "cost_notes": "The adapter records only public programme metadata. Confirm current eligibility, price, availability and terms at the official source.",
+  "normalized_terms": {
+    "acceptance_criteria": "Repository and project maintainers define task acceptance criteria.",
+    "authorization_scope": "Use only public contribution paths and project guidance provided by Apache.",
+    "payout_condition": "No payment is inferred; contribution recognition and any programme terms are project-specific.",
+    "dispute_process": "Use the relevant Apache project mailing list and code-review process."
+  },
+  "enabled": true,
+  "permission_status": "reviewed-public-read",
+  "reviewed_at": "2026-09-08",
+  "permission_evidence": "https://www.apache.org/robots.txt",
+  "owner": "bookchaowalit",
+  "min_interval_seconds": 21600,
+  "retention": "private local raw archive; operational retention; no automatic deletion",
+  "use": "public bounty metadata for personal discovery; no source-body republication"
+}
