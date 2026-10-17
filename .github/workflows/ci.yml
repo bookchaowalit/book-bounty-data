@@ -1,0 +1,35 @@
+# CI + security baseline (DevSecOps Phase 1). Public repository: GitHub-hosted runners.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    strategy:
+      fail-fast: false
+      matrix:
+        # Lowest supported (requires-python) and a current release, as in the sibling repos.
+        python-version: ["3.10", "3.13"]
+    uses: bookchaowalit/platform-ci-workflows/.github/workflows/ci-python.yml@c37ef9d113eefb3ed45429717cb7ca201192c3fc # v1.0.1
+    with:
+      python-version: ${{ matrix.python-version }}
+      # Offline pytest suite, then a CLI smoke over the packaged synthetic fixture (as in the README).
+      test-command: |
+        python -m pytest -q
+        book-bounty-data contract > /dev/null
+        book-bounty-data validate src/book_bounty_data/demo.json
+        book-bounty-data demo --open-only > /dev/null
+
+  security:
+    uses: bookchaowalit/platform-ci-workflows/.github/workflows/security.yml@c37ef9d113eefb3ed45429717cb7ca201192c3fc # v1.0.1
