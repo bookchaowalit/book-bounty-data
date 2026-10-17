@@ -17,3 +17,24 @@ where = ["src"]
 
 [tool.setuptools.package-data]
 book_bounty_data = ["*.json"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff==0.16.9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.format]
+# cli.py is the shared CLI vendored (copied) across the sibling book-*-data repos; keep it
+# byte-for-byte comparable with its siblings and reformat it only together with them.
+exclude = ["src/*/cli.py"]
+
+[tool.ruff.lint]
+# Same correctness-focused set as the sibling book-*-data repos; the compact adapter style
+# (E7 one-line statements) is intentionally left alone.
+select = ["E9", "F", "I", "UP", "B"]
